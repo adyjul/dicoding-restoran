@@ -1,0 +1,8 @@
+footer {
+    padding: 1rem 0.875rem;
+    direction: ltr;
+    background: teal;
+    transition: all 0.5s ease;
+    -webkit-box-shadow: -8px -4px 10px -4px rgb(0 0 0);
+    box-shadow: -8px -4px 10px -4px rgb(0 0 0 / 16%);
+}

@@ -1,0 +1,64 @@
+img {
+    display: block;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* jumbotron */
+
+#jumbotron {
+    height: 100vh;
+}
+
+#jumbotron img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+@media (max-width: 1200px) {
+    #jumbotron {
+        height: unset;
+    }
+}
+
+
+/* end jumbotron */
+
+
+/* daftar restoran */
+
+.card h1 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.card p {
+    line-height: 1.4;
+    color: grey;
+    margin-bottom: 20px;
+}
+
+
+/* daftar restoran */
