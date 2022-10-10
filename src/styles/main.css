@@ -22,6 +22,16 @@ main {
     flex-direction: column;
 }
 
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    padding: 8px;
+    background-color: #bf1722;
+    color: white;
+    z-index: 100;
+}
+
 
 /* jumbotron */
 
@@ -62,3 +72,15 @@ main {
 
 
 /* daftar restoran */
+
+@media (max-width: 1000px) {
+    P {
+        font-size: 1.5rem;
+    }
+    a {
+        font-size: 1.6rem;
+    }
+    h1 {
+        font-size: 2.1rem;
+    }
+}

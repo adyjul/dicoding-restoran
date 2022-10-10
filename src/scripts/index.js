@@ -6,6 +6,15 @@ import '../styles/__utils.css';
 import '../styles/__footer.css';
 
 
+const ElementHamburger = document.getElementById('hamburgerElement');
+const ElementMenu = document.getElementById('menuElement');
+
+ElementHamburger.addEventListener('click', event => {
+    ElementMenu.classList.toggle('active');
+    event.stopPropagation();
+});
+
+
 data.restaurants.map(rs => {
     document.getElementById('produk').innerHTML += `
     <div class="col-md-6">
