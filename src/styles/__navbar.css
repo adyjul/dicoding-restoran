@@ -16,6 +16,10 @@ li {
     padding: 1rem;
 }
 
+.skip-link:focus {
+    top: 0;
+}
+
 
 /* brand */
 
