@@ -3,11 +3,14 @@
 
 <head>
     <meta charset="UTF-8">
-
+    <link rel="manifest" href="./app.webmanifest">
+    <link rel="icon" href="./favicon.png">
+    <script src="https://use.fontawesome.com/b070c8f1df.js"></script>
     <title>Restaurant Apps Starter Project</title>
 </head>
 
 <body>
+    
     <a href="#daftar-restoran" class="skip-link">Menuju ke konten</a>
     <nav class="navbar">
         <div class="brand">RetaMeal</div>
@@ -16,11 +19,9 @@
             <a id="hamburgerElement" for="checkbox_toggle" class="hamburger">&#9776;</a>
             <div id="menuElement" class="menu">
                 <li>
-                    <a href="./index.html">Home</a>
+                    <a href="/">Home</a>
                 </li>
-                <li><a href="#">Favorite</a></li>
-                <li><a href="#daftar-restoran">Product</a></li>
-                <li><a href="https://www.instagram.com/reta.tap/">About Us</a></li>
+                <li><a href="/#/favorite">Favorite</a></li>                                
             </div>
         </ul>
     </nav>
@@ -28,14 +29,14 @@
         <div id="jumbotron">
             <img src="./images/heros/hero-image_1.jpg" alt="">
         </div>
-        <div id="daftar-restoran" class="container">
-            <div class="heeding-daftar d-flex jcc mb-1">
+        <div id="main-content" class="container">
+            <!-- <div class="heeding-daftar d-flex jcc mb-1">
                 <h1>Daftar Restoran</h1>
-            </div>
+            </div>                      
             <div class="list-produk">
                 <div class="row" id="produk">
                 </div>
-            </div>
+            </div> -->            
         </div>
     </main>
 
