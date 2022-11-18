@@ -1,8 +1,5 @@
-
-export const RestoranListMap = (rs) =>  
-    `
-    <div class="col-md-6">
-    <div class="card shadow m-1">        
+export const RestoranListMap = (rs) => `<div class="col-md-6">
+<div class="card shadow m-1">        
         <img src="https://restaurant-api.dicoding.dev/images/small/${rs.pictureId}" class="img-card-header col-md-6 " alt="gambar-list" style="margin-right: 10px;width: 100%;height: 50%;">
         <div class="card-body container-fluid">
             <h1 class="judul">
@@ -13,10 +10,9 @@ export const RestoranListMap = (rs) =>
         </div>
         </div>
     </div>
-    `
+    `;
 
-
-export const RestoranDetailMap = ({rs,listMakanan,listMinuman}) =>`
+export const RestoranDetailMap = ({ rs, listMakanan, listMinuman }) => `
     <div class="row">
         <div class="col-md-6">
             <img src="https://restaurant-api.dicoding.dev/images/small/${rs.pictureId}" class="img-card-header col-md-6 " alt="gambar-detail" style="margin-right: 10px;width: 100%;height: 100%;">
@@ -47,7 +43,7 @@ export const RestoranDetailMap = ({rs,listMakanan,listMinuman}) =>`
     <h1 class="judul">
         Review :
     </h1>
-    ${rs.customerReviews.map(r => `
+    ${rs.customerReviews.map((r) => `
         <div class="card shadow container-fluid mb-1 mt-1">        
             <h3>${r.name}</h3>
             <h5 class="text-muted">${r.date}</h5>
@@ -55,4 +51,4 @@ export const RestoranDetailMap = ({rs,listMakanan,listMinuman}) =>`
             <p>${r.review}</p>       
         </div>    
     `)}    
-`
+`;
