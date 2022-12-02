@@ -18,10 +18,16 @@ const Favorite = {
 
   async afterRender() {
     const restoran = await FavoriteRestoranDB.getAllRestoran();
-
-    restoran.map((rs) => {
-      document.getElementById('produk').innerHTML += RestoranListMap(rs);
-    });
+    if (restoran.length === 0) {
+      document.getElementById('produk').innerHTML = `          
+          <div class="heeding-daftar d-flex jcc mb-1">
+              <h3 class="content_not_found">Data tidak ditemukan</h3>
+          </div>`;
+    } else {
+      restoran.map((rs) => {
+        document.getElementById('produk').innerHTML += RestoranListMap(rs);
+      });
+    }
   },
 };
 export default Favorite;

@@ -1,8 +1,8 @@
 export const RestoranListMap = (rs) => `<div class="col-md-6">
-<div class="card shadow m-1">        
-        <img src="https://restaurant-api.dicoding.dev/images/small/${rs.pictureId}" class="img-card-header col-md-6 " alt="gambar-list" style="margin-right: 10px;width: 100%;height: 50%;">
+<div class="card shadow m-1 content-produk">    
+        <img class="lazyload" src="https://restaurant-api.dicoding.dev/images/small/${rs.pictureId}" class="img-card-header col-md-6 " alt="gambar-list" style="margin-right: 10px;width: 100%;height: 50%;">
         <div class="card-body container-fluid">
-            <h1 class="judul">
+            <h1 class="judul" id="judul-restoran">
                 <a href="/#/detail/${rs.id}" class="judul">${rs.name}</a>
             </h1>
             <p>Rating : ${rs.rating}</p>
